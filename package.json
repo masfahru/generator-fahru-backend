@@ -1,7 +1,7 @@
 {
   "name": "generator-fahru-backend",
-  "version": "0.0.0",
-  "description": "Yeoman generator for backend created by Fahru.my.id",
+  "version": "0.0.1",
+  "description": "Yeoman generator for backend created by Fahru",
   "homepage": "https://github.com/masfahru/generator-fahru-backend",
   "author": {
     "name": "Imam Fahrur Rofi",
