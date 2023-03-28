@@ -1,0 +1,5 @@
+language: node_js
+node_js:
+  - v19
+  - v18
+  - v16
