@@ -1,14 +1,13 @@
 {
-  "name": "backend-project-name",
-  "version": "1.0.0",
+  "name": "generator-nodejs-backend",
+  "version": "0.0.0",
   "description": "",
   "main": "build/index.js",
   "type": "module",
   "license": "AGPL-version-3.0",
   "private": true,
   "engines": {
-    "node": ">= 14.0.0",
-    "npm": ">= 6.0.0"
+    "node": ">= 18.15.0"
   },
   "homepage": "",
   "repository": {
@@ -24,24 +23,22 @@
   },
   "contributors": [],
   "scripts": {
-    "prestart": "rimraf ./build && eslint ./src --ext .ts && tsc --diagnostics",
+    "build": "rimraf ./build && eslint ./src --ext .ts && tsc",
     "start": "node ./build/index.js",
     "lint": "eslint ./src --ext .ts"
   },
   "devDependencies": {
-    "@types/node": "16.18.16",
-    "@typescript-eslint/eslint-plugin": "^5.55.0",
-    "@typescript-eslint/parser": "^5.55.0",
+    "@types/node": "18.15.10",
+    "@typescript-eslint/eslint-plugin": "^5.57.0",
+    "@typescript-eslint/parser": "^5.57.0",
     "eslint": "^8.36.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^8.7.0",
+    "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^2.8.4",
-    "rimraf": "^4.4.0",
+    "prettier": "^2.8.7",
+    "rimraf": "^4.4.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.2"
-  },
-  "dependencies": {
   }
 }

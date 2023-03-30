@@ -1,5 +1,5 @@
 # generator-fahru-backend [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> Yeoman generator for backend created by Fahru.my.id
+> Yeoman generator for backend created by Fahru
 
 ## Installation
 
