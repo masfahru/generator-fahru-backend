@@ -2,7 +2,7 @@
   "name": "generator-nodejs-backend",
   "version": "0.0.0",
   "description": "",
-  "main": "build/index.js",
+  "main": "./build/index.js",
   "type": "module",
   "license": "AGPL-version-3.0",
   "private": true,
@@ -17,15 +17,31 @@
   "bugs": "",
   "keywords": [],
   "author": {
-    "name": "Imam Fahrur Rofi",
-    "email": "imamfahrurrofi@gmail.com",
-    "url": "https://fahru.my.id"
+    "name": "",
+    "email": "",
+    "url": ""
   },
   "contributors": [],
   "scripts": {
     "build": "rimraf ./build && eslint ./src --ext .ts && tsc",
     "start": "node ./build/index.js",
-    "lint": "eslint ./src --ext .ts"
+    "dev": "nodemon .",
+    "lint": "eslint --ext .ts --fix",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --ext .ts --fix",
+      "git add"
+    ],
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "devDependencies": {
     "@types/node": "18.15.10",
@@ -36,6 +52,9 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
+    "nodemon": "^2.0.22",
     "prettier": "^2.8.7",
     "rimraf": "^4.4.1",
     "ts-node": "^10.9.1",

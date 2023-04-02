@@ -1,6 +1,6 @@
 {
   "name": "generator-fahru-backend",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Yeoman generator for backend created by Fahru",
   "homepage": "https://github.com/masfahru/generator-fahru-backend",
   "author": {
@@ -13,6 +13,7 @@
   ],
   "main": "generators/index.js",
   "keywords": [
+    "generator",
     "Nodejs",
     "Backend",
     "Lint",
